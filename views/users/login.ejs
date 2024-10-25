@@ -1,0 +1,36 @@
+<% layout("layouts/boilerplate")%>
+<div class="row mt-3">
+    <h1 class="col-6 offset-3">Login</h1>
+    <div class="col-6 offset-3">
+        <form action="/login" method="POST" novalidate class="needs-validation">
+            <div class="mb-3">
+                <label for="username" class="form-label">Username</label>
+                <input
+                name="username"
+                id="username"
+                class="form-control"
+                placeholder="Enter Username"
+                required
+              />
+              <div class="invalid-feedback">
+                Please enter a valid username
+              </div>
+              <div class="valid-feedback">
+                Looks Good !!
+              </div>
+                  <br>
+                  <div class="mb-3">
+                    <label for="password" class="form-label">Password</label>
+                    <input name="password" placeholder="****"  id="password" class="form-control" type="password" required/>
+                    <div class="invalid-feedback">
+                      Password should be valid!!
+                    </div>
+                    <br>
+                     <div class="btns">
+                        <button class="btn btn-dark add-btn col-2 mb-2">Login</button>
+                      </div>
+                  </div>
+              </div>
+        </form>
+    </div>
+</div>
